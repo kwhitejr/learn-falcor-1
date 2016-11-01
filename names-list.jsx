@@ -21,5 +21,9 @@ class NamesList extends React.Component {
     const names = Object.keys(this.state.names).map(idx => {
       return <li key={idx}>{this.state.names[idx].name}</li>
     })
+
+    return (
+      <ul>{names}</ul>
+    )
   }
 }
